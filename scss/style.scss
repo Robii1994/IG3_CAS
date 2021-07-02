@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$white: #fff;
+$primaryColor: #333;
+$blue: #5D67E9;
+$lightBlue: #E8F6FD;
+$red: #EA335E;
+$green: #2EA44E;
+
+
+/* ============ Icons Css Start =========== */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?q2evsj');
+    src:  url('../fonts/icomoon.eot?q2evsj#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?q2evsj') format('truetype'),
+        url('../fonts/icomoon.woff?q2evsj') format('woff'),
+        url('../fonts/icomoon.svg?q2evsj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-class:before {
+    content: "\e900";
+}
+.icon-education:before {
+    content: "\e901";
+}
+.icon-help:before {
+    content: "\e902";
+}
+.icon-home:before {
+    content: "\e903";
+}
+.icon-left-arrow:before {
+    content: "\e904";
+}
+.icon-users:before {
+    content: "\e905";
+}
+.icon-student:before {
+    content: "\e906";
+}
+  
+
+/* ============ Common Css Start =========== */
+
+
+body{
+    font-size: 14px;
+    background-color: $white;
+    color: $primaryColor;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+b{
+    font-weight: 500;
+}
+.form-control:focus, .btn:focus, .btn-close:focus{
+    outline: none;
+    box-shadow: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f3f1ec;
+}
+::-webkit-scrollbar-thumb {
+    background: #a19894;
+    border-radius: 10px;
+}
+* {
+    scrollbar-width: thin;
+}
+
+.mainBtn{
+    padding: 12px 20px;
+    background-color: $blue;
+    color: $white;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: .2px;
+    @media (max-width: 1024px){
+        font-size: 13px;
+    }
+}
+
+.actionBtn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0;
+    font-size: 13px;
+    margin-right: 3px;
+    &.action{
+        border: solid 1px rgba(93,103,233, 0.62);
+        color: $blue;
+    }
+    &.delete{
+        border: solid 1px rgba(234,51,94, 0.62);
+        color: $red;
+        line-height: 25px;
+        font-size: 14px;
+    }
+}
+
+.userBox{
+    .userLetter{
+        min-width: 36px;
+        height: 36px;
+        line-height: 36px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        background: #0A3DBD;
+        border-radius: 50%;
+    }
+    b{
+        font-size: 14px;
+    }
+}
+
+.grayBg{
+    background: #FBFBFB;
+}
+.h-100vh{
+    min-height: calc(100vh - 75px);
+}
+
+.toggleMenu{
+    span{
+        display: block;
+        width: 30px;
+        height: 2px;
+        border-radius: 3px;
+        background: #585858;
+        margin: 7px 0;
+        &:nth-child(2){
+            width: 25px;
+        }
+        &:nth-child(3){
+            width: 20px;
+        }
+    }
+}
+
+.status{
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 4px 13px;
+    @media (max-width: 1024px){
+        font-size: 12px;
+    }
+    &.active{
+        color: $green;
+        background-color: #E9F6ED;
+    }
+    &.delete{
+        color: $red;
+        background-color: #FEF3F5;
+    }
+}
+
+.whiteBox{
+    background: $white;
+    box-shadow: 0px 0px 12px 0px rgba(82,63,105,0.05);
+    border-radius: 10px;
+    padding: 25px 27px;
+    .heading{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -.2px;
+        text-align: left;
+        b{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .daysCount{
+            background: #F4F2FF;
+            color: #5E5398;
+            padding: 8px 18px;
+            font-size: 14px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+    }
+}
+
+.colorBox{
+    padding: 30px;
+    color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(82,63,105,0.05);
+    p{
+        margin-bottom: 4px;
+    }
+    .content{
+        .count{
+            font-size: 30px;
+            display: block;
+            line-height: 30px;
+        }
+        .title{
+            font-size: 20px;
+        }
+        span{
+            font-size: 13px;
+        }
+    }
+    .iconBlock{
+        font-size: 50px;
+    }
+}
+.box1{
+    background: #C71CCA;
+}
+.box2{
+    background: #0A3DBD;
+}
+.box3{
+    background: #6647BF;
+}
+.box4{
+    background: #EC8153;
+}
+
+.progressBlock{
+    b{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .progress{
+        padding: 2px;
+        border-radius: 15px;
+        height: 14px;
+        background: $white;
+        .progress-bar{
+            background: #2AC055;
+            border-radius: 15px;
+        }
+    }
+}
+
+.dottedLabel{
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+    white-space: nowrap;
+    &::before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    &.freeTrial{
+        color: #EC8153;
+        &::before{
+            background: #EC8153;
+        }
+    }
+    &.registered{
+        color: #2AC055;
+        &::before{
+            background: #2AC055;
+        }
+    }
+}
+
+.chartLabel{
+    @extend .dottedLabel;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    &::before{
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+    }
+    &.active{
+        &::before{
+            background: #2697FF;
+        }
+    }
+    &.expired{
+        &::before{
+            background: #FD5353;
+        }
+    }
+    &.school{
+        &::before{
+            background: #39B4C4;
+        }
+    }
+    &.home{
+        &::before{
+            background: #3E46B1;
+        }
+    }
+    &.registration{
+        color: #2AC055;
+        &::before{
+            background: #2AC055;
+        }
+    }
+    &.trial{
+        color: #3E46B1;
+        &::before{
+            background: #3E46B1;
+        }
+    }
+}
+
+.bgLabel{
+    font-size: 12px;
+    color: $white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    .icon{
+        margin-right: 2px;
+        &.icon-education{
+            font-size: 11px;
+        }
+    }
+    &.home{
+        background: #39B4C4;
+    }
+    &.school{
+        background: #3E46B1;
+    }
+}
+
+/* ============ Sidemenu Css Start =========== */
+
+.sideMenu{
+    background-color: $white;
+    height: 100vh;
+    width: 270px;
+    padding: 20px 20px;
+    border-right: solid 1px #ddd;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    .logo{
+        max-width: 120px;
+        a{
+            display: inline-block;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .copyright{
+        color: #878787;
+        font-size: 13px;
+        padding: 25px 0 10px;
+        line-height: 23px;
+        b{
+            display: block;
+            color: #333;
+        }
+    }
+}
+
+/* ============ Topbar Css Start =========== */
+
+.topbar{
+    padding: 15px 30px;
+    left: 270px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    background: #fff;
+    right: 0;
+    z-index: 9;
+    .pageTitle{
+        h1{
+            font-size: 20px;
+            font-weight: 500;
+            @media (max-width: 1024px){
+                font-size: 18px;
+            }
+        }
+    }
+    .mainBtn{
+        padding: 10px 17px;
+        background-color: $lightBlue;
+        border: solid 1px #D2E9F5;
+        color: #011F3B;
+        white-space: nowrap;
+        .icon{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+        }
+    }
+    .helpBtn{
+        background: transparent;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        .icon{
+            font-size: 33px;
+            color: #717479;
+        }
+    }
+}
+
+/* ============ Contentarea Css Start =========== */
+
+.mainContent{
+    margin-left: 270px;
+    margin-top: 75px;
+    padding: 3px 30px 30px;
+    min-height: calc(100vh - 75px);
+}
+
+.chartLabelBlock{
+    padding: 15px 15px 0;
+    .chartLabel{
+        padding: 6px 0;
+        span,b{
+            display: inline-block;
+            font-size: 15px;
+        }
+        b{
+            color: $primaryColor;
+            margin-left: 5px;
+            font-weight: 600;
+        }
+        .value{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        hr{
+            flex: 1;
+            margin: 0 12px;
+            background: #444;
+        }
+    }
+}
+
+.tableBlock{
+    .heading{
+        font-size: 18px;
+        padding: 20px 27px 15px;
+    }
+}
+.mainTable{
+    vertical-align: middle;
+    margin: 0;
+    font-size: 14px;
+    background: #fff;
+    width: 100%;
+    .dottedLabel{
+        margin-top: 2px;
+    }
+    td, th{
+        padding: 13px 15px;
+    }
+    td:first-child, th:first-child{
+        padding-left: 27px;
+        white-space: nowrap;
+    }
+    thead{
+        background: #EAF0F7;
+        th{
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+    tbody{
+        b{
+            display: block;
+        }
+        tr{
+            border-bottom: solid 1px #DEDEDE;
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+}
+
