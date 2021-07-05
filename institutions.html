@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>IG3 CAS | Institutions</title>
+  </head>
+  <body>
+
+    <main>
+        <!-- sideBar Start-->
+        <aside class="sidebar d-flex flex-column">
+            <div class="sidebarHeader">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <nav class="sidebar-wrapper">
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a class="active" href="#">
+                                <i class="icon icon-education"></i>
+                                <span>Institutions</span>
+                            </a>    
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-student"></i>
+                                <span>Users</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Users 1</a></li>
+                                    <li><a href="#">Users 2</a></li>
+                                    <li><a href="#">Users 3</a></li>
+                                    <li><a href="#">Users 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-license"></i>
+                                <span>Licenses</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Licenses 1</a></li>
+                                    <li><a href="#">Licenses 2</a></li>
+                                    <li><a href="#">Licenses 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-import"></i>
+                                <span>LAZ Import</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-report"></i>
+                                <span>Reports</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-profile"></i>
+                                <span>Profile</span>
+                            </a>    
+                        </li>
+                    </ul>
+                  </div>
+                  <!-- sidebar-menu  -->
+              </nav>
+
+              <div class="sidebarFooter mt-auto">
+                <div class="copyright">
+                    <b>IG3 Education</b> © 2021. All rights reserved
+                </div>
+            </div>
+        </aside>  
+        <!-- sideBar End-->
+
+        <!-- Topbar Start -->
+        <div class="topbar d-flex align-items-center">
+            <div class="d-flex align-items-center">
+                <button class="navToggle"></button>
+                <div class="pageTitle"><h1 class="m-0">Institutions</h1></div>
+            </div>
+            <div class="ms-auto d-flex">
+                <a href="#" class="btn mainBtn me-md-4 me-2"><i class="icon icon-left-arrow me-1"></i> Back to MyIG3</a>
+                <a href="#" class="btn helpBtn me-md-4 me-2" title="Need help?"><i class="icon icon-help"></i></a>
+                <div class="userBox d-flex align-items-center">
+                    <div class="userLetter text-uppercase text-center me-2">A</div>
+                    <b>Aaryan Loftus</b>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Right Block Start -->
+        <section class="mainContent grayBg">
+            <div class="pageControls">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mt-3">
+                        <div class="d-flex align-items-center">
+                            <b>822 Listing(s) found</b>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-3 text-end">
+                        <button type="button" class="btn mainBtn" data-bs-toggle="modal" data-bs-target="#newInstitution"><i class="icon"></i> Filters <span class="count">2</span></button>
+                        <button type="button" class="btn mainBtn" data-bs-toggle="modal" data-bs-target="#newInstitution">+ Add New Institution</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tableBlock mt-4">
+                <div class="table-responsive">
+                    <table class="mainTable secondary">
+                        <thead>
+                            <tr>
+                                <th>Institution</th>
+                                <th>Contact Details</th>
+                                <th>Registration</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Licenses</th>
+                                <th width="8%">View</th>
+                                <th width="8%">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Passion Education</b></td>
+                                <td><b>Mario Loppas</b> mario@gmail.com</td>
+                                <td>24/06/2021 <span class="dottedLabel freeTrial">Free Trial</span></td>
+                                <td><span class="bgLabel home"><i class="icon icon-home"></i> Home</span></td>
+                                <td><span class="status active">Active</span></td>
+                                <td><b>25</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Green Sprout</b></td>
+                                <td><b>Petey Joseph</b> petey45@gmail.com</td>
+                                <td>12/05/2021 <span class="dottedLabel registered">Registered</span></td>
+                                <td><span class="bgLabel home"><i class="icon icon-home"></i> Home</span></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td><b>22</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Start Smart</b></td>
+                                <td><b>Anna Gail</b> anna321@gmail.com</td>
+                                <td>26/05/2021 <span class="dottedLabel freeTrial">Free Trial</span></td>
+                                <td><span class="bgLabel home"><i class="icon icon-home"></i> Home</span></td>
+                                <td><span class="status active">Active</span></td>
+                                <td><b>21</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Little Feats Head</b></td>
+                                <td><b>Paul Alex</b> paul@gmail.com</td>
+                                <td>22/04/2021 <span class="dottedLabel registered">Registered</span></td>
+                                <td><span class="bgLabel school"><i class="icon icon-education"></i> School</span></td>
+                                <td><span class="status active">Active</span></td>
+                                <td><b>14</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>A Step Ahead</b></td>
+                                <td><b>Anna Mathew</b> anna321@gmail.com</td>
+                                <td>14/03/2021 <span class="dottedLabel freeTrial">Free Trial</span></td>
+                                <td><span class="bgLabel school"><i class="icon icon-education"></i> School</span></td>
+                                <td><span class="status active">Active</span></td>
+                                <td><b>16</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Passion Education</b></td>
+                                <td><b>Gail eype</b> gail@gmail.com</td>
+                                <td>08/03/2021 <span class="dottedLabel registered">Registered</span></td>
+                                <td><span class="bgLabel school"><i class="icon icon-education"></i> School</span></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td><b>22</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>A Step Ahead</b></td>
+                                <td><b>Anna Paulson</b> anna123@gmail.com</td>
+                                <td>30/03/2021 <span class="dottedLabel registered">Registered</span></td>
+                                <td><span class="bgLabel home"><i class="icon icon-home"></i> Home</span></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td><b>28</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Little Feats</b></td>
+                                <td><b>Neethu Loppas</b> neethu@gmail.com</td>
+                                <td>24/02/2021 <span class="dottedLabel freeTrial">Free Trial</span></td>
+                                <td><span class="bgLabel school"><i class="icon icon-education"></i> School</span></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td><b>12</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>A Step Ahead</b></td>
+                                <td><b>Anna Paulson</b> anna123@gmail.com</td>
+                                <td>30/03/2021 <span class="dottedLabel registered">Registered</span></td>
+                                <td><span class="bgLabel home"><i class="icon icon-home"></i> Home</span></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td><b>15</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Little Feats</b></td>
+                                <td><b>Neethu Loppas</b> neethu@gmail.com</td>
+                                <td>24/02/2021 <span class="dottedLabel freeTrial">Free Trial</span></td>
+                                <td><span class="bgLabel school"><i class="icon icon-education"></i> School</span></td>
+                                <td><span class="status active">Active</span></td>
+                                <td><b>24</b></td>
+                                <td><a href="#" class="btn viewBtn"></a></td>
+                                <td>
+                                    <button type="button" class="btn dropdown-toggle moreBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end moreItems">
+                                        <li><a href="" class="btn"><i class="icon icon-student"></i> Users</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-product"></i> Products</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-education"></i> Classes</a></li>
+                                        <li><a href="" class="btn"><i class="icon icon-roster"></i> Rosters</a></li>
+                                        <hr>
+                                        <li><a href="" class="btn edit"><i class="icon icon-edit"></i> Edit</a></li>
+                                        <li><a href="" class="btn delete"><i class="icon icon-delete"></i> Delete</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination Start -->
+            <div class="d-flex align-items-center mt-3">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Prev</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item "><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+                <div class="ms-auto">Showing 1 - 15 of 822 Listing(s)</div>
+            </div>
+            <!-- Pagination End -->
+        </section>
+        <!-- Right Block End -->
+
+
+
+        <!-- Add New Institution Modal Start-->
+        <div class="modal fade defaultModal" id="newInstitution" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content"> 
+                    <div class="modal-header">       
+                        <h5 class="modal-title" id="staticBackdropLabel">Add New Institution</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="defaultForm">
+                            <div class="alert alert-danger">Error message</div>
+                            <div class="alert alert-success">Success message</div>
+                            <div class="mb-3">
+                                <label class="form-label">Institution Name</label>
+                                <input type="text" class="form-control" placeholder="Enter institution name" name="">
+                                <!-- <div class="invalid-feedback">Enter error message</div> -->
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Contact Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter contact name" name="">
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Contact Email</label>
+                                    <input type="text" class="form-control" placeholder="Enter email address" name="">
+                                </div>
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Institution Type</label>
+                                    <select class="form-select">
+                                        <option value="">School</option>
+                                        <option value="">Home</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-select">
+                                        <option value="">Active</option>
+                                        <option value="">Deleted</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Language</label>
+                                    <select class="form-select">
+                                        <option value="">-- Select --</option>
+                                        <option value="">Language</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Progressive Mode</label>
+                                    <select class="form-select">
+                                        <option value="">Yes</option>
+                                        <option value="">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-grid mt-1">
+                                <button class="btn mainBtn" type="button">Add Institution</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add New Institution Modal End-->
+    </main>
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(".sidebar-dropdown > a").click(function() {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                .parent()
+                .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .parent()
+                .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .next(".sidebar-submenu")
+                .slideDown(200);
+                $(this)
+                .parent()
+                .addClass("active");
+            }
+        });
+
+        $(document).ready(function(){
+            $(".navToggle").click(function(){
+            $("main").toggleClass("toggled");
+            });
+        });
+
+        $('.navToggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    </script>
+
+</body>
+</html>

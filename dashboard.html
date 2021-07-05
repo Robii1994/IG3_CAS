@@ -13,30 +13,91 @@
   <body>
 
     <main>
-        <!-- Sidemenu Start-->
-        <div class="sideMenu d-flex flex-column">
-            <div class="logo mb-4">
-                <a href="#"><img src="images/logo.png" alt=""></a>
+        <!-- sideBar Start-->
+        <aside class="sidebar d-flex flex-column">
+            <div class="sidebarHeader">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
             </div>
 
-            <nav>
-                Menus Here
-            </nav>
+            <nav class="sidebar-wrapper">
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">
+                                <i class="icon icon-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-education"></i>
+                                <span>Institutions</span>
+                            </a>    
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-student"></i>
+                                <span>Users</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Users 1</a></li>
+                                    <li><a href="#">Users 2</a></li>
+                                    <li><a href="#">Users 3</a></li>
+                                    <li><a href="#">Users 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-license"></i>
+                                <span>Licenses</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Licenses 1</a></li>
+                                    <li><a href="#">Licenses 2</a></li>
+                                    <li><a href="#">Licenses 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-import"></i>
+                                <span>LAZ Import</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-report"></i>
+                                <span>Reports</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-profile"></i>
+                                <span>Profile</span>
+                            </a>    
+                        </li>
+                    </ul>
+                  </div>
+                  <!-- sidebar-menu  -->
+              </nav>
 
-            <div class="copyright mt-auto">
-                <b>IG3 Education</b> © 2021. All rights reserved
+              <div class="sidebarFooter mt-auto">
+                <div class="copyright">
+                    <b>IG3 Education</b> © 2021. All rights reserved
+                </div>
             </div>
-        </div>  
-        <!-- Sidemenu End-->
+        </aside>  
+        <!-- sideBar End-->
 
         <!-- Topbar Start -->
         <div class="topbar d-flex align-items-center">
             <div class="d-flex align-items-center">
-                <a href="#" class="toggleMenu me-4">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
+                <button class="navToggle"></button>
                 <div class="pageTitle"><h1 class="m-0">Dashboard</h1></div>
             </div>
             <div class="ms-auto d-flex">
@@ -358,7 +419,43 @@
         <!-- Right Block End -->
     </main>
    
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(".sidebar-dropdown > a").click(function() {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                .parent()
+                .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .parent()
+                .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .next(".sidebar-submenu")
+                .slideDown(200);
+                $(this)
+                .parent()
+                .addClass("active");
+            }
+        });
+
+        $(document).ready(function(){
+            $(".navToggle").click(function(){
+            $("main").toggleClass("toggled");
+            });
+        });
+
+        $('.navToggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    </script>
 
 </body>
 </html>
