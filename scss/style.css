@@ -88,6 +88,14 @@
   content: "\e910";
 }
 
+.icon-user-plus:before {
+  content: "\e911";
+}
+
+.icon-upload:before {
+  content: "\e912";
+}
+
 /* ============ Common Css Start =========== */
 body {
   font-size: 14px;
@@ -182,6 +190,10 @@ b {
   width: 100%;
 }
 
+.mainBtn.green {
+  background: #2EA44E;
+}
+
 @media (max-width: 1024px) {
   .mainBtn {
     font-size: 13px;
@@ -192,6 +204,8 @@ b {
   color: #5D67E9;
   font-weight: 500;
   font-size: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .actionBtn {
@@ -202,10 +216,10 @@ b {
   border-radius: 3px;
   padding: 0;
   font-size: 13px;
-  margin-right: 3px;
+  margin-right: 1px;
 }
 
-.actionBtn.action {
+.actionBtn.edit {
   border: solid 1px rgba(93, 103, 233, 0.62);
   color: #5D67E9;
 }
@@ -213,7 +227,6 @@ b {
 .actionBtn.delete {
   border: solid 1px rgba(234, 51, 94, 0.62);
   color: #EA335E;
-  line-height: 25px;
   font-size: 14px;
 }
 
@@ -384,6 +397,30 @@ b {
 
 .dottedLabel.registered::before, .registered.chartLabel::before {
   background: #2AC055;
+}
+
+.dottedLabel.student, .student.chartLabel {
+  color: #2697FF;
+}
+
+.dottedLabel.student::before, .student.chartLabel::before {
+  background: #2697FF;
+}
+
+.dottedLabel.teacher, .teacher.chartLabel {
+  color: #00956B;
+}
+
+.dottedLabel.teacher::before, .teacher.chartLabel::before {
+  background: #00956B;
+}
+
+.dottedLabel.reseller, .reseller.chartLabel {
+  color: #EC8153;
+}
+
+.dottedLabel.reseller::before, .reseller.chartLabel::before {
+  background: #EC8153;
 }
 
 .chartLabel {
@@ -991,7 +1028,6 @@ b {
 
 .filterWrap .linkBtn {
   margin: 7px auto 0;
-  display: flex;
 }
 
 .defaultModal .modal-header {
@@ -1125,5 +1161,57 @@ b {
 .searchBox .btn {
   border-radius: 0 5px 5px 0;
   padding: 12px 15px;
+}
+
+.tabberHead {
+  border-bottom: solid 1px #BEBEBE;
+}
+
+.tabberHead ul li .tabItem {
+  padding: 13px 17px;
+  margin: 0 5px;
+  font-size: 15px;
+  color: #111;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.tabberHead ul li .tabItem .icon {
+  color: #727272;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.tabberHead ul li .tabItem .icon.icon-education {
+  font-size: 15px;
+}
+
+.tabberHead ul li .tabItem.active {
+  border-bottom: solid 2px #5D67E9;
+  color: #5D67E9;
+}
+
+.tabberHead ul li .tabItem.active .icon {
+  color: #5D67E9;
+}
+
+.tabberHead ul li:first-child .tabItem {
+  margin-left: 0;
+}
+
+.tabberHead ul li:last-child .tabItem {
+  margin-right: 0;
+}
+
+.tabberHead .linkBtn {
+  font-size: 14px;
+  padding-right: 0;
+}
+
+.tabberHead .linkBtn .icon {
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 7px !important;
 }
 /*# sourceMappingURL=style.css.map */

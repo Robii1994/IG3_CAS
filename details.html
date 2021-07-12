@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>IG3 CAS | Institution Details</title>
+  </head>
+  <body>
+
+    <main>
+        <!-- sideBar Start-->
+        <aside class="sidebar d-flex flex-column">
+            <div class="sidebarHeader">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+            </div>
+
+            <nav class="sidebar-wrapper">
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a class="active" href="#">
+                                <i class="icon icon-education"></i>
+                                <span>Institutions</span>
+                            </a>    
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-student"></i>
+                                <span>Users</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Users 1</a></li>
+                                    <li><a href="#">Users 2</a></li>
+                                    <li><a href="#">Users 3</a></li>
+                                    <li><a href="#">Users 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="icon icon-license"></i>
+                                <span>Licenses</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="#">Licenses 1</a></li>
+                                    <li><a href="#">Licenses 2</a></li>
+                                    <li><a href="#">Licenses 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-import"></i>
+                                <span>LAZ Import</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-report"></i>
+                                <span>Reports</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-profile"></i>
+                                <span>Profile</span>
+                            </a>    
+                        </li>
+                    </ul>
+                  </div>
+                  <!-- sidebar-menu  -->
+              </nav>
+
+              <div class="sidebarFooter mt-auto">
+                <div class="copyright">
+                    <b>IG3 Education</b> © 2021. All rights reserved
+                </div>
+            </div>
+        </aside>  
+        <!-- sideBar End-->
+
+        <!-- Topbar Start -->
+        <div class="topbar d-flex align-items-center">
+            <div class="d-flex align-items-center">
+                <button class="navToggle"></button>
+                <div class="pageTitle"><h1 class="m-0">Passion Education</h1></div>
+            </div>
+            <div class="ms-auto d-flex">
+                <a href="#" class="btn mainBtn me-md-4 me-2"><i class="icon icon-left-arrow me-1"></i> Back to MyIG3</a>
+                <a href="#" class="btn helpBtn me-md-4 me-2" title="Need help?"><i class="icon icon-help"></i></a>
+                <div class="userBox d-flex align-items-center">
+                    <div class="userLetter text-uppercase text-center me-2">A</div>
+                    <b>Aaryan Loftus</b>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Right Block Start -->
+        <section class="mainContent grayBg">
+            <div class="tabberHead d-flex mt-1">
+                <ul class="d-flex">
+                    <li><a href="" class="tabItem active"><i class="icon icon-student"></i> Users</a></li>
+                    <li><a href="" class="tabItem"><i class="icon icon-product"></i> Products</a></li>
+                    <li><a href="" class="tabItem"><i class="icon icon-education"></i> Classes</a></li>
+                    <li><a href="" class="tabItem"><i class="icon icon-roster"></i> Rosters</a></li>
+                </ul>
+                <a href="#" class="btn ms-auto linkBtn"><i class="icon icon-left-arrow me-1"></i> Back to Institutions</a>
+            </div>
+
+            <div class="pageControls">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mt-3">
+                        <div class="d-flex align-items-center">
+                            <b>232 Listing(s) found</b>
+                            <div class="searchBox">
+                                <form action="">
+                                    <div class="d-flex">
+                                        <input type="text" placeholder="Search by username" class="form-control">
+                                        <button class="btn mainBtn" type="submit"><img src="images/search.svg" alt=""></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-3 text-end">
+                        <button type="button" class="btn mainBtn dropdown-toggle filter ms-1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon"><img src="images/filter.svg" alt=""></i> Filters <span class="count">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end filterList">
+                            <div class="heading">Filters</div>
+                            <div class="filterWrap">
+                                <div class="filterItem">
+                                    <p class="filterLabel">Role:</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="all" checked>
+                                            <label class="form-check-label" for="all">Student</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="school">
+                                            <label class="form-check-label" for="school">Teacher</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="home" >
+                                            <label class="form-check-label" for="home">Reseller</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- filterItem -->
+                                <div class="filterItem">
+                                    <p class="filterLabel">Status:</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="all" checked>
+                                            <label class="form-check-label" for="all">All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="active">
+                                            <label class="form-check-label" for="active">Active</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="deleted">
+                                            <label class="form-check-label" for="deleted">Deleted</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- filterItem -->
+                                <button type="submit" class="btn mainBtn full">Apply Filter</button>
+                                <button type="submit" class="btn linkBtn">Reset</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn mainBtn green ms-1" data-bs-toggle="modal" data-bs-target="#"><i class="icon icon-upload"></i> Upload Users</button>
+                        <button type="button" class="btn mainBtn ms-1" data-bs-toggle="modal" data-bs-target="#"><i class="icon icon-user-plus"></i> Add New User</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tableBlock mt-3">
+                <div class="table-responsive">
+                    <table class="mainTable secondary">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Contact Name</th>
+                                <th>Email Address</th>
+                                <th>Role</th>
+                                <th>Grade</th>
+                                <th>Status</th>
+                                <th width="8%">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>AnneOrtha</b></td>
+                                <td>Anne ortha</td>
+                                <td>anne@gmail.com</td>
+                                <td><span class="dottedLabel student">Student</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Dave_Allippa</b></td>
+                                <td><i class="icon me-1"><img src="images/crown.svg"  title="Head user" class="img-fluid"></i> Dave Allippa</td>
+                                <td>dave45@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Dee_Zynah</b></td>
+                                <td>Dee Zynah</td>
+                                <td>dee78@gmail.com</td>
+                                <td><span class="dottedLabel reseller">Reseller</span></td>
+                                <td><b>0</b></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>HughMannerizorsa</b></td>
+                                <td><i class="icon me-1"><img src="images/crown.svg"  title="Head user" class="img-fluid"></i> Hugh Mannerizorsa</td>
+                                <td>hugh@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>10</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>LocoLyzayta</b></td>
+                                <td><i class="icon me-1"><img src="images/crown.svg"  title="Head user" class="img-fluid"></i> Loco Lyzayta</td>
+                                <td>loco@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>MannyJah</b></td>
+                                <td>Manny Jah</td>
+                                <td>manny@gmail.com</td>
+                                <td><span class="dottedLabel student">Student</span></td>
+                                <td><b>0</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>AnneOrtha</b></td>
+                                <td>Anne ortha</td>
+                                <td>anne@gmail.com</td>
+                                <td><span class="dottedLabel student">Student</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Dave_Allippa</b></td>
+                                <td>Dave Allippa</td>
+                                <td>dave45@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Dee_Zynah</b></td>
+                                <td>Dee Zynah</td>
+                                <td>dee78@gmail.com</td>
+                                <td><span class="dottedLabel reseller">Reseller</span></td>
+                                <td><b>0</b></td>
+                                <td><span class="status delete">Deleted</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>HughMannerizorsa</b></td>
+                                <td>Hugh Mannerizorsa</td>
+                                <td>hugh@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>10</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>LocoLyzayta</b></td>
+                                <td>Loco Lyzayta</td>
+                                <td>loco@gmail.com</td>
+                                <td><span class="dottedLabel teacher">Teacher</span></td>
+                                <td><b>12</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>MannyJah</b></td>
+                                <td>Manny Jah</td>
+                                <td>manny@gmail.com</td>
+                                <td><span class="dottedLabel student">Student</span></td>
+                                <td><b>0</b></td>
+                                <td><span class="status active">Active</span></td>
+                                <td>
+                                    <button type="button" class="btn actionBtn edit" data-bs-toggle="modal" data-bs-target="#editUser"><i class="icon icon-edit"></i></button>
+                                    <button type="button" class="btn actionBtn delete"><i class="icon icon-delete"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pagination Start -->
+            <div class="d-flex align-items-center mt-3">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">Prev</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item "><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">15</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+                <div class="ms-auto">Showing 1 - 15 of 232 Listing(s)</div>
+            </div>
+            <!-- Pagination End -->
+        </section>
+        <!-- Right Block End -->
+
+
+
+        <!-- Add New Institution Modal Start-->
+        <div class="modal fade defaultModal" id="newInstitution" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content"> 
+                    <div class="modal-header">       
+                        <h5 class="modal-title" id="staticBackdropLabel">Add New Institution</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="defaultForm">
+                            <div class="alert alert-danger">Error message</div>
+                            <div class="alert alert-success">Success message</div>
+                            <div class="mb-3">
+                                <label class="form-label">Institution Name</label>
+                                <input type="text" class="form-control" placeholder="Enter institution name" name="">
+                                <!-- <div class="invalid-feedback">Enter error message</div> -->
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Contact Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter contact name" name="">
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Contact Email</label>
+                                    <input type="text" class="form-control" placeholder="Enter email address" name="">
+                                </div>
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Institution Type</label>
+                                    <select class="form-select">
+                                        <option value="">School</option>
+                                        <option value="">Home</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-select">
+                                        <option value="">Active</option>
+                                        <option value="">Deleted</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row gx-3">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Language</label>
+                                    <select class="form-select">
+                                        <option value="">-- Select --</option>
+                                        <option value="">Language</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Progressive Mode</label>
+                                    <select class="form-select">
+                                        <option value="">Yes</option>
+                                        <option value="">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-grid mt-1">
+                                <button class="btn mainBtn" type="button">Add Institution</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add New Institution Modal End-->
+    </main>
+   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script>
+        $(".sidebar-dropdown > a").click(function() {
+            $(".sidebar-submenu").slideUp(200);
+            if (
+                $(this)
+                .parent()
+                .hasClass("active")
+            ) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .parent()
+                .removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this)
+                .next(".sidebar-submenu")
+                .slideDown(200);
+                $(this)
+                .parent()
+                .addClass("active");
+            }
+        });
+
+        $(document).ready(function(){
+            $(".navToggle").click(function(){
+            $("main").toggleClass("toggled");
+            });
+        });
+
+        $('.navToggle').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    </script>
+
+</body>
+</html>
