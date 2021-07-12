@@ -118,16 +118,91 @@
                     <div class="col-lg-7 mt-3">
                         <div class="d-flex align-items-center">
                             <b>822 Listing(s) found</b>
-                            <div class=""></div>
+                            <div class="searchBox">
+                                <form action="">
+                                    <div class="d-flex">
+                                        <input type="text" placeholder="Search by institution" class="form-control">
+                                        <button class="btn mainBtn" type="submit"><img src="images/search.svg" alt=""></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5 mt-3 text-end">
-                        <button type="button" class="btn mainBtn" data-bs-toggle="modal" data-bs-target="#newInstitution"><i class="icon"></i> Filters <span class="count">2</span></button>
-                        <button type="button" class="btn mainBtn" data-bs-toggle="modal" data-bs-target="#newInstitution">+ Add New Institution</button>
+                        <button type="button" class="btn mainBtn dropdown-toggle filter ms-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon"><img src="images/filter.svg" alt=""></i> Filters <span class="count">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end filterList">
+                            <div class="heading">Filters</div>
+                            <div class="filterWrap">
+                                <div class="filterItem">
+                                    <p class="filterLabel">Institution Type:</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="all" checked>
+                                            <label class="form-check-label" for="all">All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="school">
+                                            <label class="form-check-label" for="school">School</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="home" >
+                                            <label class="form-check-label" for="home">Home</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- filterItem -->
+                                <div class="filterItem">
+                                    <p class="filterLabel">Status:</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="all" checked>
+                                            <label class="form-check-label" for="all">All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="active">
+                                            <label class="form-check-label" for="active">Active</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="status" id="deleted">
+                                            <label class="form-check-label" for="deleted">Deleted</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- filterItem -->
+                                <div class="filterItem">
+                                    <p class="filterLabel">Registration Type:</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="regType" id="all" checked>
+                                            <label class="form-check-label" for="all">All</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="regType" id="freeTrial">
+                                            <label class="form-check-label" for="freeTrial">Free Trial</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="regType" id="registered">
+                                            <label class="form-check-label" for="registered">Registered</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- filterItem -->
+                                <div class="filterItem">
+                                    <p class="filterLabel">Expire in:</p>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <!-- filterItem -->
+                                <button type="submit" class="btn mainBtn full">Apply Filter</button>
+                                <button type="submit" class="btn linkBtn">Reset</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn mainBtn ms-2" data-bs-toggle="modal" data-bs-target="#newInstitution">+ Add New Institution</button>
                     </div>
                 </div>
             </div>
-            <div class="tableBlock mt-4">
+            <div class="tableBlock mt-3">
                 <div class="table-responsive">
                     <table class="mainTable secondary">
                         <thead>

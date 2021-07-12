@@ -150,10 +150,48 @@ b {
   color: #fff;
 }
 
+.mainBtn.filter {
+  font-size: 14px;
+  padding: 9px 20px;
+}
+
+.mainBtn.filter img {
+  width: 20px;
+  margin-right: 2px;
+}
+
+.mainBtn.filter .count {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  color: #5D67E9;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.mainBtn.filter::after {
+  display: none;
+}
+
+.mainBtn.full {
+  width: 100%;
+}
+
 @media (max-width: 1024px) {
   .mainBtn {
     font-size: 13px;
   }
+}
+
+.linkBtn {
+  color: #5D67E9;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .actionBtn {
@@ -868,6 +906,94 @@ b {
   margin: 5px 0;
 }
 
+.filterList {
+  min-width: 335px;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
+  border: solid 1px #DFDFDF;
+  top: 13px !important;
+}
+
+.filterList:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #ccc;
+  position: absolute;
+  top: -12px;
+  right: 8px;
+}
+
+.filterList .heading, .filterList .filterWrap {
+  padding: 12px 17px;
+}
+
+.filterList .heading {
+  border-bottom: solid 1px #D6D6D6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.filterWrap {
+  padding: 17px;
+}
+
+.filterWrap .filterItem {
+  margin-bottom: 20px;
+}
+
+.filterWrap .filterItem .filterLabel {
+  color: #111;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.filterWrap .filterItem .form-check {
+  margin-right: 16px;
+  padding-left: 0;
+}
+
+.filterWrap .filterItem .form-check:last-child {
+  margin-right: 0;
+}
+
+.filterWrap .filterItem .form-check-label {
+  font-size: 14px;
+}
+
+.filterWrap .filterItem .form-check-input {
+  margin-left: 0;
+  margin-right: 6px;
+  border-color: #707070;
+}
+
+.filterWrap .filterItem .form-check-input:checked {
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+
+.filterWrap .filterItem .form-check-input:focus {
+  box-shadow: none;
+}
+
+.filterWrap .form-control, .filterWrap .defaultForm .form-select, .defaultForm .filterWrap .form-select {
+  border: solid 1px #DBDBDB;
+  font-size: 14px;
+  height: 43px;
+}
+
+.filterWrap .mainBtn {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.filterWrap .linkBtn {
+  margin: 7px auto 0;
+  display: flex;
+}
+
 .defaultModal .modal-header {
   background-color: #133D91;
   color: #fff;
@@ -979,5 +1105,25 @@ b {
   background: #5D67E9;
   border-color: #5D67E9;
   color: #fff;
+}
+
+.searchBox {
+  margin-left: 30px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.searchBox .form-control, .searchBox .defaultForm .form-select, .defaultForm .searchBox .form-select {
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+}
+
+.searchBox .form-control:focus, .searchBox .defaultForm .form-select:focus, .defaultForm .searchBox .form-select:focus {
+  border-color: #ced4da;
+}
+
+.searchBox .btn {
+  border-radius: 0 5px 5px 0;
+  padding: 12px 15px;
 }
 /*# sourceMappingURL=style.css.map */

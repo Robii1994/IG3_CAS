@@ -137,9 +137,41 @@ b{
     &:hover{
         color: $white;
     }
+    &.filter{
+        font-size: 14px;
+        padding: 9px 20px;
+        img{
+            width: 20px;
+            margin-right: 2px;
+        }
+        .count{
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            border-radius: 50%;
+            background: $white;
+            text-align: center;
+            line-height: 25px;
+            font-size: 15px;
+            color: $blue;
+            font-weight: 500;
+            margin-left: 12px;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    &.full{
+        width: 100%;
+    }
     @media (max-width: 1024px){
         font-size: 13px;
     }
+}
+.linkBtn{
+    color: $blue;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .actionBtn{
@@ -796,6 +828,78 @@ b{
     }
 }
 
+.filterList{
+    min-width: 335px;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.14);
+    border: solid 1px #DFDFDF;
+    top: 13px !important;
+    &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #ccc;
+        position: absolute;
+        top: -12px;
+        right: 8px;
+    }
+    .heading, .filterWrap{
+        padding: 12px 17px;
+    }
+    .heading{
+        border-bottom: solid 1px #D6D6D6;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.filterWrap{
+    padding: 17px;
+    .filterItem{
+        margin-bottom: 20px;
+        .filterLabel{
+            color: #111;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+        .form-check{
+            margin-right: 16px;
+            padding-left: 0;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .form-check-label{
+            font-size: 14px;
+        }
+        .form-check-input{
+            margin-left: 0;
+            margin-right: 6px;
+            border-color: #707070;
+            &:checked{
+                background-color: #5156BE;
+                border-color: #5156BE;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    .form-control{
+        border: solid 1px #DBDBDB;
+        font-size: 14px;
+        height: 43px;
+    }
+    .mainBtn{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.20)
+    }
+    .linkBtn{
+        margin: 7px auto 0;
+        display: flex;
+    }
+}
 
 .defaultModal{
     .modal-header{
@@ -906,3 +1010,19 @@ b{
     }
 }
 
+.searchBox{
+    margin-left: 30px;
+    max-width: 320px;
+    width: 100%;
+    .form-control{
+        border-radius: 5px 0 0 5px;
+        font-size: 14px;
+        &:focus{
+            border-color: #ced4da;
+        }
+    }
+    .btn{
+        border-radius: 0 5px 5px 0;
+        padding: 12px 15px;
+    }
+}
